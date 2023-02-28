@@ -1,0 +1,35 @@
+/* Readonly Field Design */
+input[readonly],
+input[readonly]:focus,
+input[readonly]:active {
+  background-color: #e9ecef;
+}
+
+/* Card Image Container Height */
+.card-img {
+  height: 21rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Card Image Height */
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+/* Card Body Height (Except Area Calculation Card) */
+.card-body:not(:last-child) {
+  height: 17.75rem;
+}
+
+/* Blog Background Image */
+.blog-bg {
+  background-image: url(../images/blog-bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  min-height: 29rem;
+  display: flex;
+  align-items: end;
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <main class="container py-4">
+
+    <!-- Banner Starts Here -->
+    <div class="p-4 p-md-5 mb-4 rounded text-bg-dark blog-bg shadow"></div>
+    <!-- Banner Ends Here -->
+  
+    <div class="row g-5">
+      <div class="col-md-8">
+        
+        <h1 class="fst-italic fw-bold mb-2">Answering JavaScript Related Questions</h1>
+        <p class="blog-post-meta border-bottom pb-4 mb-4">February 18, 2023 by <a href="#">Shamiul</a></p>
+  
+        <article class="blog-post mb-5">
+          <h2 class="blog-post-title mb-2">Question-1: What is DOM and what is the purpose of DOM?</h2>
+          <p>DOM means Document Object Model. DOM in JavaScript is a way to access and change the content and structure of a web page. It allows developers to use JavaScript to interact with the elements of an HTML or XML document.</p>
+          <p>The DOM in JavaScript serves as a tool for developers to dynamically alter a web page's content, structure, and style in response to events or actions taken by users. In order to create dynamic and interactive web pages, JavaScript may access and edit the properties and attributes of specific HTML elements, as well as inserting or removing items from the page and changing their appearance.</p>
+          <p>For example, with the DOM, developers can change the text or images on a web page, add new elements to the page, or make elements respond to user actions.</p>
+          <p>The DOM is a fundamental part of creating dynamic and interactive web pages and enables developers to make web pages that are more engaging and useful for users.</p>
+        </article>
+        
+        <hr>
+
+        <article class="blog-post mt-5 mb-5">
+          <h2 class="blog-post-title mb-2">Question-2: How will you select HTML elements using DOM? Name the DOM methods.</h2>
+          <p>To select HTML elements using the DOM in JavaScript, we can use different methods depending on the specific element or elements we want to select. Name of some DOM methods with simple explanation about their functionality is given in the following-</p>
+          <p class="fs-5 fw-semibold text-decoration-underline">Some DOM Methods for Selecting HTML Elements:</p>
+          <ul>
+            <li><strong>getElementById():</strong> This method returns an element whose id matches a passed string.</li>
+            <li><strong>getElementsByTagName():</strong> This method returns the HTMLCollection of elements that match the passed tag name.</li>
+            <li><strong>getElementsByClassName():</strong> This method returns an HTMLCollection of elements that match the passed class name.</li>
+            <li><strong>getElementsByName():</strong> This method returns the elements that match the value of the name attribute with the passed string. The return value is a live NodeList Collection.</li>
+            <li><strong>querySelector():</strong> This method returns the first element that matches the passed selector.</li>
+            <li><strong>querySelectorAll():</strong> This method is an extension of the querySelector method. This method returns all the elements that match the passed selector.</li>
+          </ul>
+        </article>
+
+        <hr>
+
+        <article class="blog-post mt-5 mb-5">
+          <h2 class="blog-post-title mb-2">Question-3: What is event bubble?</h2>
+          <p>Event bubbling in JavaScript allows a child element's event to be transmitted up through its parent elements until it reaches the top-level HTML content.</p>
+          <p>Since the event handlers are called in order from the innermost to the outermost element, this enables many elements to react to the same event.</p>
+          <p>The event "bubbles up" across the DOM structure from the child element to its parent elements, that's the reason it is called "bubbling."</p>
+        </article>
+
+        <hr>
+
+        <article class="blog-post mt-5 mb-5">
+          <h2 class="blog-post-title mb-2">Question-4: What is a callback function and why will you use it?</h2>
+          <p>A callback function is a function that is passed as an argument to another function and is called by that function when a certain event or condition occurs. The purpose of a callback function is to allow certain parts of the code to be executed without blocking the execution of other parts of the code.</p>
+          <p>Simply, a callback function is a function that is called by another function when a certain action is completed. It can be used to perform some operation after a certain task is completed, or it can be used to execute a function after a certain event occurs. For example, a callback function can be used to update the UI after data is retrieved from a server, or to execute a function after a user clicks a button.</p>
+          <p>Callbacks are commonly used in JavaScript for many purposes, including handling events, making asynchronous requests, and implementing iterators. It is a powerful tool for creating dynamic and responsive web applications.</p>
+        </article>
+
+      </div>
+
+      <!-- About -->
+      <div class="col-md-4">
+        <div class="position-sticky" style="top: 2rem;">
+          <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="fst-italic">About</h4>
+            <p class="mb-0">Here you can find the answers of some JavaScript related questions.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+</html>
